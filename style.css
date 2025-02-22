@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1b1d;
+  user-select: none;
+}
+
+td {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  padding: 10px 15px;
+  /* font-weight: 600; */
+  font-size: 18px;
+  /* border-radius: 12px; */
+  transition: all 0.2s ease-in-out;
+  font-family: "Pacifico";
+}
+
+.fa-xmark {
+  font-size: 14px;
+}
+
+/* From Uiverse.io by kandalgaonkarshubham */
+.container {
+  --s: 37px;
+
+  --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+  --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+  --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+  --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+  background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+    var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+    var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+  background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+}
+
+/* From Uiverse.io by satyamchaudharydev */
+/* inspired form gumroad website */
+.button {
+  --bg: #000000bb;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fffffff4;
+  cursor: pointer;
+  border: 1px solid rgb(84, 84, 84);
+  border-radius: 5px;
+  /* padding: 0.8em 2em; */
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.description {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gray; */
+  background-color: #eb94da;
+  border-radius: 15px;
+  width: 600px;
+  height: 300px;
+  font-size: 120px;
+  font-family: "Pacifico";
+  padding-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  --des: #ff90e8;
+  box-shadow: rgba(247, 88, 188, 0.4) 5px 5px, rgba(247, 88, 188, 0.3) 10px 10px,
+    rgba(247, 88, 188, 0.2) 15px 15px, rgba(247, 88, 188, 0.1) 20px 20px,
+    rgba(247, 88, 188, 0.05) 25px 25px;
+}
+
+.fa-xmark1 {
+  font-size: 65px;
+  transform: translateY(14px);
+  margin: 0 20px;
+}
+
+.description.show {
+  display: flex;
+}
+
+.button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
