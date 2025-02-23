@@ -17,15 +17,18 @@
     for ($i = 1; $i < 10; $i++) {
         echo "<tr>";
         for ($j = 1; $j < 10; $j++) {
-            echo "<td class='button'>";
-            // if ($j % 2 == 0)
-            //     echo "<td class='button'>";
-            // else
-            //     echo "<td class='button' style='color: #eb94da;'>";
+            // echo "<td class='button'>";
+            if ($j % 2 == 0)
+                echo "<td class='button btn2'>";
+            else
+                echo "<td class='button btn1'>";
 
             echo $j . " <i class='fa-solid fa-xmark'></i> " . $i . " = " . ($i * $j);
 
-            echo "<div class='description'>" . $j . " <i class='fa-solid fa-xmark fa-xmark1'></i> " . $i . " = " . ($i * $j) . "</div>";
+            if ($j % 2 == 0)
+                echo "<div class='description des2'>" . $j . " <i class='fa-solid fa-xmark fa-xmark1'></i> " . $i . " = " . ($i * $j) . "</div>";
+            else
+                echo "<div class='description des1'>" . $j . " <i class='fa-solid fa-xmark fa-xmark1'></i> " . $i . " = " . ($i * $j) . "</div>";
 
             echo "</td>";
         }
